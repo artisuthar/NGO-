@@ -1,0 +1,434 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header 
+{
+    top:0px;
+    width:100%;
+}
+.navbar
+{
+    background-color: black;
+}
+.navbar-brand
+{
+    color:white;
+    font-weight: bold;
+}
+.navbar ul li a 
+{
+    text-decoration: none;
+    color: white;
+}
+ul li a:hover
+{
+    color:lawngreen;
+    border-bottom: 2px solid lawngreen; 
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(124, 252, 0, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  } 
+.custom-toggler.navbar-toggler {
+    border:2px solid lawngreen;
+  } 
+.bg-img 
+{
+    top:0px;
+    height:640px;
+    width:100%;
+    filter: brightness(70%);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+}
+.main-content
+{
+    position:absolute;
+    height:140px;
+    width:50%;
+    top:180px;
+    left:25%;
+    text-align: center;
+    color:white;
+    border:2px solid lawngreen;
+}
+.main-content h3
+{
+    font-size: 60px;
+}
+.main-content .span
+{
+    font-size: 30px;
+} 
+
+@media (max-width:767px)
+{
+    .main-content
+    {
+        height:460px;
+    }
+
+}
+
+
+#about
+{
+    height:600px;
+    width:100%;
+    background-color: black;
+    color:white;
+}
+.about-head
+{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.about-head h3 
+{
+    font-size: 50px;
+    padding-bottom: 5px;
+}
+.about-head h3:hover
+{
+    color:lawngreen;
+    border-bottom: 2px solid white; 
+    border-color: lawngreen;
+}
+.about-head .span
+{
+    font-size: 40px;
+} 
+
+@media (max-width:767px)
+{
+    
+    #about
+    {
+        height:1000px;
+        width:100%;
+    }
+    .about-e
+    {
+      width:300px;
+    }
+}
+
+#activities
+{
+    height:auto;
+    padding-bottom: 30px;
+    background-color:lightgreen;
+    text-align: center;
+}
+#activities h3 
+{
+    color:white;
+    font-size: 50px;
+    padding-bottom: 5px;
+   
+}
+#activities h3:hover 
+{
+    border-bottom: 2px solid white; 
+    border-color:black;
+}
+.card 
+{
+    border:1px solid white;
+   border-bottom-left-radius: 10%;
+    padding:0px;
+    margin:0px;
+    background-color: lightgray;
+}
+.card-img
+{
+   
+    width:100%;
+    position:relative;
+    float:left;
+}
+.card-img img 
+{
+    width:100%;
+    height:200px;
+}
+.card-box 
+{
+    padding:10px;
+}
+.card-box h2
+{
+    font-size: 26px;
+    font-weight: bold;
+    color:darkblue;
+}
+.card-box h4
+{
+    font-size: 20px;
+}
+.card-box .span 
+{
+    text-justify:auto;
+    font-size: 18px;;
+}
+@media(max-width:767px)
+{
+    .card
+    {
+        margin-bottom: 20px;
+    }
+
+}
+@media(width<=320px)
+{
+    .navbar
+    {
+        min-width:100%;
+    }
+    .navbar-toggler
+    {
+        right: -100px;
+    }
+}
+.parallax
+{
+    background: url('../images/Lighthouse.jpg') no-repeat fixed 100%;
+    background-size: cover;
+}
+.parallax-inner
+{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.volunteer
+{
+    text-align: center;
+    color:white;
+}
+.volunteer .btn 
+{
+    background-color: darkmagenta;
+    color:white;
+    border-radius: 5px;
+    cursor:pointer;
+    box-shadow: 0 0 10px rgba(163, 154, 199, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.volunteer .btn:hover
+{
+    box-shadow: 0 0 20px rgba(7, 6, 6, 0.5);
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+}
+#gallary
+{
+    background-color: lightgray;
+    height:auto;
+}
+#gallary h2
+{
+    font-size: 50px;
+}
+.image 
+{
+    position: relative;
+    width:350px;
+}
+.image--img 
+{
+    height:240px;
+    display:block;
+    width:100%;
+}
+.image--overlay 
+{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0, 0, 0, 0.6);
+    color:#ffffff;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    opacity:0;
+}
+.image--overlay >*
+{
+    transform:translateY(20px);
+    transition:transform 0.25s;
+
+}
+/*
+.image--overlay--blur 
+{
+    backdrop-filter: blur(5px);
+}
+
+.image--overlay--primary 
+{
+    background: lawngreen;
+}
+*/
+.image--overlay:hover
+{
+    opacity:1;
+}
+.image--overlay:hover > *
+{
+    transform:translateY(0px);
+}
+.image--title 
+{
+    font-size:30px;
+    font-weight: bold;;
+}
+.image--desc 
+{
+    font-size: 20px;
+}
+@media (max-width:767px)
+{
+    .image
+    {
+        margin-bottom: 20px;
+    }
+}
+#contact 
+{
+    background-color: lightgreen;
+    height:auto;
+    padding:20px;
+}
+.contact-head 
+{
+    text-align:center;
+}
+.contact-head h2
+{
+    font-size: 40px;
+    font-weight: bold;
+}
+.contact-head .span 
+{
+    font-size: 30px;
+    font-weight: bold;
+}
+.contact-head hr 
+{
+    width:10%;
+    position: relative;
+    height:2px;
+    margin-bottom:2px;
+    background-color: darkblue;
+}
+.cbtn
+{
+    margin-left: 86%;
+}
+.location 
+{
+    margin-bottom:20px;
+}
+@media(max-width:767px)
+{
+
+    .location
+    {
+        margin-bottom: 20px;
+    }
+}
+footer 
+{
+    height:auto;
+    background-color: black;
+}
+/*--------------------volunteer.html-----------------------*/
+#join 
+{
+    text-align: center;
+    background-color: thistle;
+    height:auto;
+}
+.join-head h2 
+{
+    font-size: 30px;
+    padding-top:10px;
+}
+.join-head h3 
+{
+    font-size: 20px;
+    margin:20px 0px;
+}
+.join-head p 
+{
+    font-size: 20px;
+    font-weight:450;
+    margin:0px 200px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+}
+
+.join-head hr 
+{
+    width:60%;
+    position: relative;
+    height:2px;
+    background-color: darkblue;
+}
+.join-img
+{
+    background-image: url("../images/we.jpeg");
+    height:300px;
+    width:500px;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+.join-body 
+{
+    width:auto;
+    font-size: 20px;
+    margin-left: 20px;
+   text-align: justify;
+}
+@media screen and (max-width:1024px)
+{
+    
+    .join-head p
+    {
+        margin: 10px 10px;
+    }
+    .join-img 
+    {
+        width:100%;
+    }
+}
+#join-footer
+{
+    text-align: center;
+    padding-bottom:40px;
+    height:auto;
+    background-color: thistle;   
+}
+#join-footer h4
+{
+    font-size: 22px;
+    margin:0px 300px;
+}
+@media screen and (max-width:1024px)
+{
+    #join-footer h4
+    {
+        margin:0 10px;
+        text-align: center;
+    }
+}
